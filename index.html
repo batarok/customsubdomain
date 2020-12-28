@@ -4,18 +4,37 @@
 	<title>ComPro</title>
 	<style type="text/css">
 		.blinking{
-    animation:blinkingText 1.2s infinite;
+    	animation:blinkingText 1.2s infinite;
+    	font-size: 36px;
+    	text-align: center;
+    	width: 100%;
+    	height: auto;
+    	bottom: 0px;
+    	top: 0px;
+    	left: 0px;
+    	position: absolute;
+		}
+		@keyframes blinkingText{
+		    0%{     color: #000;    }
+		    49%{    color: #000; }
+		    60%{    color: transparent; }
+		    99%{    color:transparent;  }
+		    100%{   color: #000;    }
+		}
+		.center {
+    position: absolute;
+    border: none;
+    width: 100px;
+    height: 50px;
+    top: 50%;
+    left: 45%;
+    /*margin-top: -25px;
+    margin-left: -50px; */
 }
-@keyframes blinkingText{
-    0%{     color: #000;    }
-    49%{    color: #000; }
-    60%{    color: transparent; }
-    99%{    color:transparent;  }
-    100%{   color: #000;    }
-}
+		
 	</style>
 </head>
 <body>
-<p class="blinking">UnderConstruction</p>
+<p class="blinking"> <span class="center"> UnderConstruction</span></p>
 </body>
 </html>
