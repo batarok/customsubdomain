@@ -2,8 +2,20 @@
 <html>
 <head>
 	<title>ComPro</title>
+	<style type="text/css">
+		.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: #000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+	</style>
 </head>
 <body>
-<p><blink> UnderConstruction </blink></p>
+<p class="blinking">UnderConstruction</p>
 </body>
 </html>
